@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+
+:root{
+    --primary-color:#fa5320;
+    --secondary-color: white;
+    --container-color:#f7f9fa;
+    --font-color:#4c555e;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+/* navigation*/
+.header {
+    width: 100%;
+  max-width:80%;
+  margin:auto;
+  display:flex;
+  justify-content: space-between;
+  
+  
+  }
+  .brand-name {
+    width: 49%;
+    font-size: 40px;
+      font-weight:bolder;
+      padding-left: 40px;
+      padding-top: 10px;
+      color: var(--primary-color);
+      line-height: -5px;
+  }
+
+.nav-link{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    color: var(--font-color);
+}
+
+.nav-pills {
+    text-align: right;
+    list-style: none;
+}
+
+
+.list-inline {
+    display: inline-block;
+    margin: 10px;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 100;
+    
+}
+
+/*break*/
+.dashed {
+    opacity: 40%;
+}
+/* container*/
+.container-color{
+    background-color: var(--container-color);
+}
+.container{
+    text-align: center;
+    margin: auto;
+    max-width: 80%;
+    padding-top: 20px;
+    
+}
