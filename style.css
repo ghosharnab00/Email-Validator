@@ -121,13 +121,13 @@ footer .nav-pills{
     
 }
 
-.social-links{
+ul.social-links{
     list-style: none;
     text-align: center;
+    padding-left: 0px;
 }
 
 .list-inline{
     display: inline;
     margin: 10px;
-    
 }
