@@ -67,7 +67,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    padding-bottom:50px;
+   padding-bottom:50px;
 }
 .container{
     text-align: center;
@@ -110,6 +110,7 @@ width: 100%;
   display:block;
   background-color: var(--footer-color);
   
+  bottom: 0;
     
 }
 footer .nav-link{
@@ -199,4 +200,17 @@ ul.social-links{
 .input-wrapper .desc {
     color: var(--desc-font-color);
     font-size: medium;
+}
+
+/* Resume */
+
+.result {
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: white;
+    color: var(--font-secondary-color);
+}
+
+.result .is-verify{
+    color: var(--primary-color);
 }
