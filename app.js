@@ -13,19 +13,18 @@ return url + "?key=" + apiKey + "&email=" + emailInput.value
 
 }
 
+console.log(getReq);
+
 function verifyEmail(){
     fetch (getReq(mainUrl), { mode: 'no-cors'})
     .then ( response => response.json())
-    .then (json => {var validate = json.status;
-        function outPut_validate(){
-            if (validate == "True"){
-                result.innerHTML = "Valid";
-            }
-                else {
-                    result.innerHTML = "InValid"
-                }
-            }
-    }).catch(err => {console.log(err); alert("Server Limit Crossed , try with other API")})
+    .then (json => {var res = json.status; console.log(res)}).catch(err => {console.log(err); alert("Server Limit Crossed , try with other API")})
 }
 
-verifyClick.addEventListener("click", verifyEmail);
+/*verifyClick.addEventListener("click", verifyEmail);*/
+
+
+
+/* fetch (url, { mode: 'no-cors'})
+.then (response => response.json())
+.then (json => {var temp = json.status; console.log(temp)}) */
