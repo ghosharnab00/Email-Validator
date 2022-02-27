@@ -1,0 +1,24 @@
+{
+  "name": "emailvalidator",
+  "version": "1.0.0",
+  "description": "It will validate emails",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghosharnab00/Email-Validator.git"
+  },
+  "author": "Arnab Ghosh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ghosharnab00/Email-Validator/issues"
+  },
+  "homepage": "https://github.com/ghosharnab00/Email-Validator#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15",
+    "save": "^2.4.0"
+  }
+}
