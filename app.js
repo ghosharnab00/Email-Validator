@@ -1,5 +1,6 @@
 //import
 var express = require('express')
+var path = require('path')
 var app = express()
 var validator = require("email-validator")
 
