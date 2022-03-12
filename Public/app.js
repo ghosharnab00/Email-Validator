@@ -1,10 +1,10 @@
-var apiKey = "DI11MUVHJ3RMBP37UTOR";
+var mbv = require("mailboxvalidator-nodejs");
 
 var emailInput = document.getElementById("input");
 var verifyClick = document.getElementById("input-button");
 var result = document.getElementById("is-verify");
 var apiKey = "DI11MUVHJ3RMBP37UTOR";
-var mbv = require("mailboxvalidator-nodejs");
+
  
 mbv.MailboxValidator_init(apiKey);
  
