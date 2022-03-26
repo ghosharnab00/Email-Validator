@@ -1,7 +1,8 @@
 //import
 var express = require("express");
+var request = require('request');
+
 var app = express();
-var validator = require("email-validator");
 
 var port = 3000;
 
@@ -18,10 +19,26 @@ app.get("", (req, res) => {
   res.render("index");
 });
 
-app.get("/validate", (req, res) => {
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  next();
+});
+
+app.get('/validate', (req, res) => {
   let email = req.query.email;
-  let result = validator.validate(email);
-  res.json({ isValid: result });
+  //console.log(email)
+  let Url = `https://api.mailboxvalidator.com/v1/validation/single?key=DI11MUVHJ3RMBP37UTOR&email=${email}`
+  
+  request(
+    { url: Url },
+    (error, response, body) => {
+      if (error || response.statusCode !== 200) {
+        return res.status(500).json({ type: 'error', message: err.message });
+      }
+
+      res.json(JSON.parse(body));
+    }
+  )
 });
 
 //Listne to port 3000
