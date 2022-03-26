@@ -11,12 +11,12 @@ validatt.addEventListener("click", () => {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      if (data.isValid) {
+      if (data.is_verified === "True") {
         console.log("Valid");
-        output.innerHTML = "valid";
+        output.innerHTML = "Valid";
       } else {
-        console.log("Invalid");
-        output.innerHTML = "Invalid";
+        console.log("InValid");
+        output.innerHTML = "InValid";
       }
     });
 });
