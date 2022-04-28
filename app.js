@@ -42,4 +42,4 @@ app.get('/validate', (req, res) => {
 });
 
 //Listne to port 3000
-app.listen(port, () => console.info(`Listning to port ${port}`));
+app.listen(process.env.PORT || port, () => console.info(`Listning to port ${port}`));
