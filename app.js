@@ -15,7 +15,7 @@ app.set("views", "./views");
 app.set("view engine", "ejs");
 
 //render ejs
-app.get("", (req, res) => {
+app.get("/", (req, res) => {
   res.render("index");
 });
 
